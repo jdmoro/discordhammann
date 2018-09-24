@@ -1,15 +1,10 @@
 const botconfig = require("./botconfig.json");
-const aws = require('aws-sdk');
 const Discord = require("discord.js");
+const tokenfile = process.env.token;
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
 const bot = new Discord.Client({disabledEveryone: true});
 bot.commands = new Discord.Collection();
-
-let s3 = new aws.S3({
-  accessKeyId: process.env.token,
-  secretAccessKey: process.env.token
-});
 
 fs.readdir("./commands/", (err, file) => {
 

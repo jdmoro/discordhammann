@@ -6,7 +6,7 @@ module.exports.run = async (bot,message,args) => {
   if(!gChannel) return message.channel.send("Couldn't find the channel.");
 
   message.delete().catch(O_o=>{});
-  gChannel.send("I'm sorry commanders\n\nSome pervert went into my dorm and got my keys\nHammann will try to fix all her mistakes so that you can forgive her.\n*sobs*\nHammann swears it wont happen again.", {
+  gChannel.send("**I'm sorry commanders**\nSome pervert went into my dorm and got my keys\nHammann will try to fix all her mistakes so that you can forgive her.\nHammann swears it wont happen again.\n*sobs*", {
   file: "https://i.imgur.com/YWbG9xR.png"
 });
 

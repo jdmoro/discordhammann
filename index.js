@@ -1,6 +1,6 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
-const tokenfile = process.env.token;
+const token = process.env.token;
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
 const bot = new Discord.Client({disabledEveryone: true});
@@ -45,4 +45,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(tokenfile);
+bot.login(token).catch(err => console.log(err));

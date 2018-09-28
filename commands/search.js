@@ -4,7 +4,7 @@ module.exports.run = async (bot,message,args) => {
 
 //!kick @user reason
 
-  let search = args[2];
+  let search = args[1];
 
   message.channel.send(`https://azurlane.koumakan.jp/w/index.php?title=Special%3ASearch&go=Go&search=${search}`)
 }

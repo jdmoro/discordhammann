@@ -6,7 +6,7 @@ module.exports.run = async (bot,message,args) => {
 
   let search = args.join(" ").slice(22);
 
-  message.channel.send(`https://azurlane.koumakan.jp/w/index.php?title=Special%3ASearch&go=Go&search=`search)
+  message.channel.send("https://azurlane.koumakan.jp/w/index.php?title=Special%3ASearch&go=Go&search="search)
 }
 
 module.exports.help = {

@@ -7,12 +7,6 @@ module.exports.run = async (bot,message,args) => {
   let search = args[2];
 
   message.channel.send(`https://azurlane.koumakan.jp/w/index.php?title=Special%3ASearch&go=Go&search=${search}`)
-
-
-  message.channel.send(kickEmbed);
-
-  return;
-
 }
 
 module.exports.help = {

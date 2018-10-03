@@ -26,6 +26,7 @@ module.exports.run = async (bot,message,args) => {
       message.channel.send(replyroll[resultroll]);
     }
 
+  return;
 
   }
 module.exports.help = {

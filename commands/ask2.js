@@ -9,17 +9,10 @@ module.exports.run = async (bot,message,args) => {
   let questionroll = args.slice(1).join(" ");
   let resultroll = Math.floor((Math.random() * replyroll.length));
 
-  if(args[0] === 'why') message.channel.send(whyroll[resultroll]);
+  if(args[0] === 'why') => message.channel.send(whyroll[resultroll]);
+  if(args[0] === 'how') => message.channel.send(howroll[resultroll]);
 
-else {
   message.channel.send(replyroll[resultroll]);
-}
-
-if(args[0] === 'how') message.channel.send(howroll[resultroll]);
-
-else {
-  message.channel.send(replyroll[resultroll]);
-}
 
 
 }

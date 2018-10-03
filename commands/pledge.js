@@ -3,15 +3,16 @@ const Discord = require("discord.js");
 module.exports.run = async (bot,message,args) => {
 
 
-  var VC = message.member.voiceChannel;
-        if (!VC)
-            return message.reply("MESSAGE IF NOT IN A VOICE CHANNEL")
-    VC.join()
-        .then(connection => {
-            const dispatcher = connection.playFile('./PledgeJP.mp3');
-            dispatcher.on("end", end => {VC.leave()});
-        })
-        .catch(console.error);
+  const streamOptions = { seek: 0, volume: 1 };
+  var voiceChannel = message.member.voiceChannel;
+          voiceChannel.join().then(connection => {
+              console.log("joined channel");
+              const stream = ytdl('https://www.youtube.com/watch?v=gOMhN-hfMtY', { filter : 'audioonly' });
+              const dispatcher = connection.playStream(stream, streamOptions);
+              dispatcher.on("end", end => {
+                  console.log("left channel");
+                  voiceChannel.leave();
+              });
 
 }
 

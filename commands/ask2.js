@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot,message,args) => {
 
-  if(!args[2]) return message.reply("Try to speak properly... baka! ");
   let replyroll = ["Yes!", "No! No! No!", "Maybe? I don’t know", "Hmph! I guess so... Baka!"];
   let whyroll = ["1", "2", "3"];
   let howroll = ["4", "5", "6", "7"];

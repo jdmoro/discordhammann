@@ -13,20 +13,20 @@ module.exports.run = async (bot,message,args) => {
     let resultroll = Math.floor((Math.random() * replyroll.length));
 
     if(args[0] === 'why') {
-      message.channel.send(whyroll[resultroll]);
+        return message.channel.send(whyroll[resultroll]);
     } else if (args[0] === 'how'){
-      message.channel.send(howroll[resultroll]);
+        return message.channel.send(howroll[resultroll]);
     } else if (args[0] === 'when'){
-      message.channel.send(whenroll[resultroll]);
+        return message.channel.send(whenroll[resultroll]);
     } else if (args[0] === 'where'){
-      message.channel.send(whereroll[resultroll]);
+        return message.channel.send(whereroll[resultroll]);
     } else if (args[0] === 'what'){
-      message.channel.send(whatroll[resultroll]);
+        return message.channel.send(whatroll[resultroll]);
     } else {
-      message.channel.send(replyroll[resultroll]);
+        return message.channel.send(replyroll[resultroll]);
     }
 
-  return;
+;
 
   }
 module.exports.help = {

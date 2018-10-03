@@ -6,6 +6,7 @@ const fs = require("fs");
 const bot = new Discord.Client({disabledEveryone: true});
 bot.commands = new Discord.Collection();
 
+const PREFIX = require('./config');
 const GOOGLE_API_KEY = process.env.googleapikey;
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');

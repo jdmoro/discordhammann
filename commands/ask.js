@@ -19,9 +19,9 @@ module.exports.run = async (bot,message,args) => {
     } else if (args[0] === 'when'){
       message.channel.send(whenroll[resultroll])
     } else if (args[0] === 'where'){
-      message.channel.send(whenroll[resultroll])
+      message.channel.send(whereroll[resultroll])
     } else if (args[0] === 'what'){
-      message.channel.send(whenroll[resultroll])
+      message.channel.send(whatroll[resultroll])
     } else {
       message.channel.send(replyroll[resultroll])
     }

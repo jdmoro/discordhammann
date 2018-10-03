@@ -8,12 +8,9 @@ module.exports.run = async (bot,message,args) => {
   if(!gUser) return message.channel.send("I couldn't find that user Admiral.");
   let gReason = args.join(" ").slice(22);
 
-  let gChannel = message.guild.channels.find(role => role.name === "general");
-  if(!gChannel) return message.channel.send("Couldn't find the channel.");
-
   message.delete().catch(O_o=>{});
-  gChannel.send(`${gUser}`)
-  gChannel.send(gReason,{
+  message.channel.send(`${gUser}`)
+  message.channel.send(gReason,{
     file: "https://media.giphy.com/media/CZpro4AZHs436/giphy.gif"
   });
 
@@ -22,5 +19,5 @@ module.exports.run = async (bot,message,args) => {
 }
 
 module.exports.help = {
-  name: "greet2"
+  name: "greet"
 }

@@ -14,19 +14,22 @@ module.exports.run = async (bot,message,args) => {
 
     if(args[0] === 'why') {
         return message.channel.send(whyroll[resultroll]);
-    } else if (args[0] === 'how'){
+    }
+    else if (args[0] === 'how'){
         return message.channel.send(howroll[resultroll]);
-    } else if (args[0] === 'when'){
+    }
+    else if (args[0] === 'when'){
         return message.channel.send(whenroll[resultroll]);
-    } else if (args[0] === 'where'){
+    }
+    else if (args[0] === 'where'){
         return message.channel.send(whereroll[resultroll]);
-    } else if (args[0] === 'what'){
+    }
+    else if (args[0] === 'what'){
         return message.channel.send(whatroll[resultroll]);
-    } else {
+    }
+    else {
         return message.channel.send(replyroll[resultroll]);
     }
-
-;
 
   }
 module.exports.help = {

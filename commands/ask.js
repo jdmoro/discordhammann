@@ -13,11 +13,13 @@ module.exports.run = async (bot,message,args) => {
       message.channel.send(whyroll[resultroll]);
     } else if (args[0] === 'how'){
       message.channel.send(howroll[resultroll]);
+    } else if (args[0] === 'when'){
+       message.channel.send(howroll[resultroll]);
     } else {
       message.channel.send(replyroll[resultroll]);
     }
 
-  
+
   }
 module.exports.help = {
   name: "ask"

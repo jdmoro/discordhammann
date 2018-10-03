@@ -12,7 +12,12 @@ module.exports.run = async (bot,message,args) => {
   if(args[0] === 'why') message.channel.send(whyroll[resultroll]);
   if(args[0] === 'how') message.channel.send(howroll[resultroll]);
 
-  message.channel.send(replyroll[resultroll]);
+  else if (false) {
+
+      message.channel.send(replyroll[resultroll]);
+
+
+  }
 
 
 }

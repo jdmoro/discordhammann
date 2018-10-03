@@ -6,6 +6,12 @@ const fs = require("fs");
 const bot = new Discord.Client({disabledEveryone: true});
 bot.commands = new Discord.Collection();
 
+const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config');
+const YouTube = require('simple-youtube-api');
+const ytdl = require('ytdl-core');
+const youtube = new YouTube(GOOGLE_API_KEY);
+const queue = new Map();
+
 fs.readdir("./commands/", (err, file) => {
 
   if(err) console.log(err);

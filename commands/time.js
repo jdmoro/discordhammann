@@ -10,6 +10,8 @@ module.exports.run = async (bot,message,args) => {
          d.getMinutes(),
          d.getSeconds()].join(':');
 
+         message.channel.send(d);
+
 }
 
 module.exports.help = {

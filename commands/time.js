@@ -15,7 +15,7 @@ module.exports.run = async (bot,message,args) => {
 
 
   message.channel.send("**AzurLane's Server Time:**");
-  message.channel.send(dformat);
+  message.channel.send("`"+dformat+"`");
 
 }
 

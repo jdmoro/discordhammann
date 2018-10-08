@@ -7,7 +7,7 @@ module.exports.run = async (bot,message,args) => {
     return len > 0? new Array(len).join(chr || '0')+this : this;
   }
 
-  var d = new Date;
+  var d = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
 
   let dformat = [(d.getMonth()+1).padLeft(), d.getDate().padLeft(), d.getFullYear()].join('/')+'\n'+ [(d.getHours()-7).padLeft(), d.getMinutes().padLeft(), d.getSeconds().padLeft()].join(':');
 

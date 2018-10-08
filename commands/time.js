@@ -7,9 +7,9 @@ module.exports.run = async (bot,message,args) => {
     return len > 0? new Array(len).join(chr || '0')+this : this;
   }
 
-  var d = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+  var d = new Date("8/10/2018 0:00 UTC-07:00");
 
-  let dformat = [(d.getMonth()+1).padLeft(), d.getDate().padLeft(), d.getFullYear()].join('/')+'\n'+ [(d.getHours()-7).padLeft(), d.getMinutes().padLeft(), d.getSeconds().padLeft()].join(':');
+  let dformat = [(d.getMonth()+1).padLeft(), d.getDate().padLeft(), d.getFullYear()].join('/')+'\n'+ [(d.getHours()).padLeft(), d.getMinutes().padLeft(), d.getSeconds().padLeft()].join(':');
 
   message.channel.send("AzurLane's Server time is now:\n"+ dformat);
 

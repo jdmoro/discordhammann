@@ -12,11 +12,10 @@ module.exports.run = async (bot,message,args) => {
   let dformat = [(d.getMonth()+1).padLeft(), d.getDate().padLeft(), d.getFullYear()].join('/')+'\n'+ [((d.getHours()-7+24)%24).padLeft(), d.getMinutes().padLeft(), d.getSeconds().padLeft()].join(':');
 
 
-  let timetable = new Discord.RichEmbed()
-  .setColor("#4aef5a")
-  .addField("AzurLane's Server time", dformat)
-  
-  message.channel.send(timetable);
+
+
+  message.channel.send("AzurLane's Server Time:");
+  message.channel.send(dformat);
 
 }
 

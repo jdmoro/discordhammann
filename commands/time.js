@@ -1,6 +1,4 @@
 const Discord = require("discord.js");
-const moment = require('moment-timezone');
-
 
 module.exports.run = async (bot,message,args) => {
 

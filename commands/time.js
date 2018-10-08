@@ -14,10 +14,8 @@ module.exports.run = async (bot,message,args) => {
 
   let timetable = new Discord.RichEmbed()
   .setColor("#4aef5a")
-  .setTitle("AzurLane's Server time")
-  .addField(dformat,"If the time is negative please refer to the chart below")
-  .setFooter("-7 is 5pm | -6 is 6pm | -5 is 7pm | -4 is 8pm | -3 is 9pm | -2 is 10pm | -1 is 11pm | 0 is 12pm")
-
+  .addField("AzurLane's Server time", dformat)
+  
   message.channel.send(timetable);
 
 }

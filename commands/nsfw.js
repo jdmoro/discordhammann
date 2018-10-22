@@ -20,7 +20,7 @@ module.exports.run = async (bot,message,args) => {
   }
 
   await(tonsfw.addRole(nsfwrole.id));
-  message.channel.send(`<@${tonsfw.id}> has been added to the pervert list!`);
+  message.channel.send(`<@${tonsfw.id}> has been added to the pervert list!!`);
 
 }
 

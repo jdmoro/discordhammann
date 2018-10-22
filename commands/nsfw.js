@@ -8,7 +8,7 @@ module.exports.run = async (bot,message,args) => {
   let nsfwrole = message.guild.roles.find(role => role.name === "nsfw role");
 
   await(tonsfw.addRole(nsfwrole.id));
-  message.channel.send(`<@${tomute.id}> has been added to the pervert list!`);
+  message.channel.send(`<@${tonsfw.id}> has been added to the pervert list!`);
 
 }
 

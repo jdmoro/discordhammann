@@ -7,6 +7,18 @@ module.exports.run = async (bot,message,args) => {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Hmph! You need **Admin privilege** to do this!");
   let nsfwrole = message.guild.roles.find(role => role.name === "nsfw");
 
+  if(!nsfwrole){
+    try{
+      muterole = await message.guild.createRole({
+        name : "nsfw",
+        color : "#000000",
+        permissions: []
+      });
+    }catch(e){
+      console.log(e.stack);
+    }
+  }
+
   await(tonsfw.addRole(nsfwrole.id));
   message.channel.send(`<@${tonsfw.id}> has been added to the pervert list!`);
 

@@ -11,7 +11,7 @@ module.exports.run = async (bot,message,args) => {
   let onerole = message.guild.roles.find(role => role.name === "nsfw");
 
   await(toadd.addRole(onerole.id));
-  nChannel.send(`${kUser} has joined`);
+  nChannel.send(`${toadd} has joined`);
 
   return;
 

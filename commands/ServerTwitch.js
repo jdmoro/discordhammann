@@ -9,6 +9,7 @@ module.exports.run = async (bot,message,args) => {
   if(message.author.id !== "363857147584577538") return send.message.channel("Nani?!");
   else {
       sChannel.send(`Nobu is now live and streaming.\nhttps://twitch.tv/nobukun`);
+      message.channel.send(`Nobu is now live and streaming.\nhttps://twitch.tv/nobukun`);
   }
 
 

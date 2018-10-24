@@ -10,9 +10,13 @@ module.exports.run = async (bot,message,args) => {
   let toadd = message.guild.member(message.author);
   let onerole = message.guild.roles.find(role => role.name === "nsfw");
 
-  await(toadd.addRole(onerole.id));
-  nChannel.send(`${toadd} has joined`);
 
+  if(toadd.roles.has(onerole.id)) return message.reply("Already on the list.");
+  await(toadd.addRole(onerole.id));
+
+  try{
+    await nChannel.send(`${toadd} has joined`);
+  }
   return;
 
 }

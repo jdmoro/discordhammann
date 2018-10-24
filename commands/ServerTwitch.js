@@ -10,8 +10,6 @@ module.exports.run = async (bot,message,args) => {
   if(sMember.roles.has(twitch.id)) return sChannel.send(`<@${user}>\nis now live and streaming.\nhttps://twitch.tv/nobukun`);
   if(!sMember.roles.has(twitch.id)) return send.message.channel("You don't have the streamer tag.");
 
-  }
-
 }
 
 module.exports.help = {

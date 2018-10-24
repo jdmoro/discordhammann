@@ -9,7 +9,7 @@ module.exports.run = async (bot,message,args) => {
   let twitch = message.guild.roles.find(role => role.name === "Streamer");
 
   if(message.author.has(twitch.id)) return sChannel.send(`<@${user}>\nis now live and streaming.\n${link}`);
-  if(message.author.has(twitch.id)) return send.message.channel("You don't have the streamer tag.");
+  if(!message.author.has(twitch.id)) return send.message.channel("You don't have the streamer tag.");
 
 }
 

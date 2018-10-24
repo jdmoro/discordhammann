@@ -6,12 +6,12 @@ module.exports.run = async (bot,message,args) => {
 
   message.delete().catch(O_o=>{});
 
-  let nsfw = message.guild.channels.find(role => role.name === "nsfw");
+  let nChannel = message.guild.channels.find(role => role.name === "nsfw-chat");
   let toadd = message.guild.member(message.author);
   let onerole = message.guild.roles.find(role => role.name === "nsfw");
 
   await(toadd.addRole(onerole.id));
-  nsfw.send(`${toadd} has joined.`);
+  nsfw.send(`${kUser} has joined`);
 
   return;
 

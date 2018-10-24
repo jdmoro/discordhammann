@@ -13,10 +13,8 @@ module.exports.run = async (bot,message,args) => {
 
   if(toadd.roles.has(onerole.id)) return message.reply("Already on the list.");
   await(toadd.addRole(onerole.id));
+  await nChannel.send(`${toadd} has joined`);
 
-  try {
-    await nChannel.send(`${toadd} has joined`);
-  }
   return;
 
 }

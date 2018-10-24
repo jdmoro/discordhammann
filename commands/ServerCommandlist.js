@@ -7,5 +7,5 @@ message.channel.send("Nobu still working on this.")
 }
 
 module.exports.help = {
-  name: "admincommands"
+  name: "commandlist"
 }

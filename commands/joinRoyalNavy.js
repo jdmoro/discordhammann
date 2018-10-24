@@ -4,11 +4,11 @@ module.exports.run = async (bot,message,args) => {
 
 //!faction @user join
 
-let toadd = message.guild.member(message.author);
-let onerole = message.guild.roles.find(role => role.name === "RoyalNavy");
+  let toadd = message.guild.member(message.author);
+  let onerole = message.guild.roles.find(role => role.name === "RoyalNavy");
 
-await(toadd.addRole(onerole.id));
-
+  await(toadd.addRole(onerole.id));
+  message.reply("Added to Royal Navy");
 }
 
 module.exports.help = {

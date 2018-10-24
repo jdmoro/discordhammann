@@ -8,6 +8,7 @@ module.exports.run = async (bot,message,args) => {
   let onerole = message.guild.roles.find(role => role.name === "IronBlood");
 
   await(toadd.addRole(onerole.id));
+  message.reply("Added to Iron Blood");
 
 }
 

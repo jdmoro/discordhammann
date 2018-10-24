@@ -10,7 +10,7 @@ module.exports.run = async (bot,message,args) => {
   if(!twitch) return send.message.channel("You don't have the streamer tag.");
   else
   {
-  sChannel.send(`<@${user}>\nis now live and streaming.\n<https://twitch.tv/nobukun>`);
+  sChannel.send(`<@${user}>\nis now live and streaming.\nhttps://twitch.tv/nobukun`);
   }
 
 }

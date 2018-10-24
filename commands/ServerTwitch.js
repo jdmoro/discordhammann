@@ -9,7 +9,7 @@ module.exports.run = async (bot,message,args) => {
   let sChannel = message.guild.channels.find(role => role.name === "stream");
   let twitch = message.guild.roles.find(role => role.name === "Streamer");
 
-  if(message.member.has(twitch.id)) {
+  if(sMember.role.has(twitch.id)) {
     sChannel.send(`<@${user}>\nis now live and streaming.\nhttps://twitch.tv/nobukun`);
   } else {
   send.message.channel("You don't have the streamer tag.");

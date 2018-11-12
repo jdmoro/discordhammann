@@ -9,5 +9,5 @@ message.channel.send(" ",{
 }
 
 module.exports.help = {
-  name: "fw"
+  name: "1552fw"
 }

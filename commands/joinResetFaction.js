@@ -9,11 +9,13 @@ module.exports.run = async (bot,message,args) => {
   let second = message.guild.roles.find(role => role.name === "IronBlood");
   let third = message.guild.roles.find(role => role.name === "RoyalNavy");
   let fourth = message.guild.roles.find(role => role.name === "SakuraEmpire");
+  let fifth = message.guild.roles.find(role => role.name === "VichyaDominion");
 
   await(toadd.removeRole(first.id));
   await(toadd.removeRole(second.id));
   await(toadd.removeRole(third.id));
   await(toadd.removeRole(fourth.id));
+  await(toadd.removeRole(fifth.id));
 
 }
 

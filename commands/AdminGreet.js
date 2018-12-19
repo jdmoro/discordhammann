@@ -9,7 +9,7 @@ module.exports.run = async (bot,message,args) => {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Hmph! You need **Admin privilege** to do this!");
   let gReason = args.join(" ").slice(22);
 
-  let gChannel = message.guild.channels.find(role => role.name === "the-dockyard");
+  let gChannel = message.guild.channels.find(role => role.name === "general-chat");
   if(!gChannel) return message.channel.send("Couldn't find the channel.");
 
   message.delete().catch(O_o=>{});

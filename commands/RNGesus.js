@@ -8,7 +8,7 @@ module.exports.run = async (bot,message,args) => {
     let questionroll = args.slice(1).join(" ");
     let resultroll = Math.floor((Math.random() * hitroll.length));
 
-    message.channel.send(enemy",has been");
+    message.channel.send(enemy);
     message.channel.send(hitroll[resultroll]);
   }
 

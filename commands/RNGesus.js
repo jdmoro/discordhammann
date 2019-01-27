@@ -7,7 +7,7 @@ module.exports.run = async (bot,message,args) => {
     let resultroll = Math.floor((Math.random() * hitroll.length));
 
 
-    message.channel.reply(hitroll[resultroll]);
+    message.reply(hitroll[resultroll]);
   }
 
 module.exports.help = {

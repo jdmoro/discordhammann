@@ -8,7 +8,7 @@ module.exports.run = async (bot,message,args) => {
 
     message.channel.send(hitroll[resultroll]);
   }
-}
+  
 module.exports.help = {
   name: "attack"
 }

@@ -9,8 +9,8 @@ module.exports.run = async (bot,message,args) => {
 
     if(args[0] === 'enemy') {
         return message.channel.send(hitroll[resultroll]);
-
   }
+}
 module.exports.help = {
   name: "attack"
 }

@@ -3,18 +3,18 @@ const ms = require("ms");
 
 module.exports.run = async (bot,message,args) => {
 
-  let tomute = message.author;
-  let muterole = message.guild.roles.find(role => role.name === "commissioned");
+  let user = message.guild.member(message.author);
+  let userrole = message.guild.roles.find(role => role.name === "commissioned");
 
   let timer = args[0];
   if(!timer) return message.reply("Specify a time.");
 
-  await(tomute.addRole(muterole.id));
+  await(user.addRole(userrole.id));
   message.channel.send(`countdown started!`);
 
   setTimeout(function(){
-    tomute.removeRole(muterole.id);
-    message.channel.send(`<@${tomute.id}> countdown has finished!`);
+    user.removeRole(userrole.id);
+    message.channel.send(`<@${user.id}> countdown has finished!`);
     }, ms(timer));
 
 }

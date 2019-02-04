@@ -10,7 +10,7 @@ module.exports.run = async (bot,message,args) => {
   if(!timer) return message.reply("Specify a time.");
 
   await(user.addRole(userrole.id));
-  message.channel.send(`countdown started!`);
+  message.channel.send(`Doomsday timer has started!`);
 
   setTimeout(function(){
     user.removeRole(userrole.id);

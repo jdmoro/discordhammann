@@ -14,7 +14,7 @@ module.exports.run = async (bot,message,args) => {
 
   setTimeout(function(){
     user.removeRole(userrole.id);
-    message.channel.send(`<@${user.id}> countdown has finished!`);
+    message.channel.send(`<@${user.id}> <${timer}> countdown has finished!`);
     }, ms(timer));
 
 }

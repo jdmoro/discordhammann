@@ -38,6 +38,8 @@ bot.on("ready", async () => {
 
 });
 
+bot.on('error', console.error);
+
 bot.on("message", async message => {
 
   if (message.author.bot) return;

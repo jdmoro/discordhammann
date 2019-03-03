@@ -16,12 +16,12 @@ module.exports.run = async (bot, message, args) => {
     .padLeft(), d.getMinutes()
     .padLeft(), d.getSeconds()
     .padLeft()
-  ].join(':') + "`";
+  ].join(':');
 
 
 
 
-  message.channel.send("**AzurLane's Server Time:**\n" + dformat);
+  message.channel.send("** Server Time:**\n" + dformat);
 
 }
 

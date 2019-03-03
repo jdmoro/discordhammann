@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-  message.channel.send("** Server Time:**\n" + dformat);
+  message.channel.send("**Server Time:**\n" + dformat);
 
 }
 

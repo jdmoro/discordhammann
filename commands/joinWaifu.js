@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
   message.delete()
     .catch(O_o => {});
 
-  let wChannel = message.guild.channels.find(role => channel.id === "540968312461590528");
+  let wChannel = message.guild.channels.find(role => role.id === "540968312461590528");
   let toadd = message.guild.member(message.author);
   let waifuRole = message.guild.roles.find(role => role.id === "551723116234014720");
 

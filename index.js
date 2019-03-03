@@ -32,7 +32,7 @@ fs.readdir("./commands/", (err, file) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is happy to serve the admiral`)
-  bot.user.setActivity("Captain's Dorm", {
+  bot.user.setActivity("8 Servers", {
     type: "Watching"
   });
 

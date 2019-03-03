@@ -26,13 +26,13 @@ module.exports.run = async (bot, message, args) => {
     return message.channel.send(whenroll[result4roll]);
   } else if (message.content.includes("where")) {
     return message.channel.send(whereroll[result5roll]);
-  } else if (message.content.includes("what"))) {
-  return message.channel.send(whatroll[result6roll]);
-} else if (message.content.includes("who")) {
-  return message.channel.send(whoroll[result7roll]);
-} else {
-  return message.channel.send(replyroll[result1roll]);
-}
+  } else if (message.content.includes("what")) {
+    return message.channel.send(whatroll[result6roll]);
+  } else if (message.content.includes("who")) {
+    return message.channel.send(whoroll[result7roll]);
+  } else {
+    return message.channel.send(replyroll[result1roll]);
+  }
 
 }
 module.exports.help = {

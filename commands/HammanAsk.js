@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  let replyroll = ["Yes! <:Oohh:503545401731711006>", "No! <:HamMad:472549831529988096> ", "Maybe? <:KagaSip:504873454571618304>", "<a:SuomiPeek:529791444626440203>", "I don’t know <:uniConfused:503539368535916556>"];
+  let replyroll = ["Yes! <:Oohh:503545401731711006>", "No! <:z2No:503547731340427264>", "Maybe? <:KagaSip:504873454571618304>", "<:LaffeyHide:503547822549762048>", "I don’t know <:uniConfused:503539368535916556>"];
   let whyroll = ["Because you're a pervert!", "ask yourself! idiot.. Hmpf!", "Sims would know..Hmpf!"];
   let howroll = ["How would I know?", "Buy more gems! Akashi?!", "By not being an idiot! Baka!", "Hammann won't answer stupid questions"];
   let whenroll = ["How would I know?", "Hammann won't answer stupid questions", "When? when you give what Hammann wants!"];

@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
       .join(" ");
     let resultroll = Math.floor((Math.random() * hitroll.length));
 
-    message.reply(hitroll[resultroll] + ` ${user}`);
+    message.reply(hitroll[resultroll] + ` ${member}`);
   });
 }
 module.exports.help = {

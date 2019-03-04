@@ -24,7 +24,6 @@ module.exports.run = async (bot, message, args) => {
           msg.delete(5000)
         });
     })
-    .then(message.channel.send("Finished."))
     .catch(err => console.log(err));
 
 }

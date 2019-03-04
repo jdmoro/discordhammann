@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
 
   role.members.forEach(member => {
 
-
+    await (member.addRole(inactiveRole.id));
 
     message.channel.send(`${member} has been logged.`)
       .then(msg => {

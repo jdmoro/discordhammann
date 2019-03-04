@@ -4,13 +4,10 @@ module.exports.run = async (bot, message, args) => {
 
   //!faction @user join
 
-  let toadd = message.guild.member(message.author);
   let inactiveRole = message.guild.roles.find(role => role.id === "541608599311482880");
 
-  await (toadd.addRole(inactiveRole.id));
-
   let role = message.guild.roles.find(role => role.id === "549320899170664448");
-
+  await (toadd.addRole(inactiveRole.id));
   if (!message.guild.members.get(message.author.id)
     .hasPermission("ADMINISTRATOR")) return message.channel.send("You can't do this.");
 
@@ -21,7 +18,9 @@ module.exports.run = async (bot, message, args) => {
 
   role.members.forEach(member => {
 
-    message.channel.send(`1`)
+
+
+    message.channel.send(`${member.displayName} was logged.`)
       .then(msg => {
         msg.delete(5000)
       });

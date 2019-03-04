@@ -1,4 +1,6 @@
 const Discord = require("discord.js");
+const MaxListeners = require('events')
+  .EventEmitter.defaultMaxListeners = 100;
 
 module.exports.run = async (bot, message, args) => {
 

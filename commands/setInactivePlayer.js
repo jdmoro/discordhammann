@@ -1,13 +1,12 @@
 const Discord = require("discord.js");
 const MaxListeners = require('events')
-  .EventEmitter.defaultMaxListeners = 100;
+  .EventEmitter.defaultMaxListeners = 20;
 
 module.exports.run = async (bot, message, args) => {
 
   //!faction @user join
 
   let inactiveRole = message.guild.roles.find(role => role.id === "541608599311482880");
-
   let role = message.guild.roles.find(role => role.id === "549320899170664448");
 
   if (!message.guild.members.get(message.author.id)
@@ -23,9 +22,6 @@ module.exports.run = async (bot, message, args) => {
     member.addRole(inactiveRole.id);
 
     message.channel.send(`${member} has been logged.`)
-      .then(msg => {
-        msg.delete(5000)
-      });
   });
 
 }
